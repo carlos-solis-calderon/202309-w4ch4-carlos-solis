@@ -1,8 +1,3 @@
-import { useContext } from 'react';
-import { App } from '../App/App';
-
 export function Display() {
-  const { phone } = useContext(App);
-
-  return <span className="number">{phone}</span>;
+  return <span className="number">667359961</span>;
 }
