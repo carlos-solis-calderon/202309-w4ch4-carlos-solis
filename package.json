@@ -11,7 +11,8 @@
   },
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "sass": "^1.69.5"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
@@ -26,8 +27,7 @@
     "typescript": "^5.0.2",
     "vite": "^4.4.5"
   },
-    "prettier": {
+  "prettier": {
     "singleQuote": true
   }
-  }
-
+}
