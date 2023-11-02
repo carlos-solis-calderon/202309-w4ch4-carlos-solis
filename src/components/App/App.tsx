@@ -1,19 +1,15 @@
-import { Action } from '../action/action';
-import { Display } from '../display/display';
 import { Info } from '../info/info';
 import { Keyboard } from '../keyboard/keyboard';
+import { Actions } from '../actions/actions';
 
-function App() {
+export function App() {
   return (
-    <div className="container">
+    <>
       <Info></Info>
-      <Keyboard>
-        <Action>
-          <Display></Display>
-        </Action>
-      </Keyboard>
-    </div>
+      <main className="phone">
+        <Keyboard></Keyboard>
+        <Actions></Actions>
+      </main>
+    </>
   );
 }
-
-export default App;

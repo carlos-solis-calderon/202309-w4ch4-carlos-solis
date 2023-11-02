@@ -1,36 +1,12 @@
-import { useContext } from 'react';
-import { AppContext } from '../../context/context';
-
-export function Action({ children }: { children: JSX.Element }) {
-  const { phone, deleteNumber } = useContext(AppContext);
-
-  const handleCallClick = () => {
-    const hang = document.querySelector('.hang');
-    hang?.classList.toggle('off');
-    const call = document.querySelector('.call');
-    call?.classList.toggle('off');
-  };
-
-  const handleHangClick = () => {
-    const call = document.querySelector('.call');
-    call?.classList.toggle('off');
-    const hang = document.querySelector('.hang');
-    hang?.classList.toggle('off');
-    deleteNumber();
-  };
-
+export function Action() {
   return (
-    <div className="actions">
-      {children}
-      <button
-        className={phone.length === 9 ? 'call active' : 'call'}
-        onClick={handleCallClick}
-      >
+    <>
+      <a href="#" className="call">
         Call
-      </button>
-      <button className="hang off" onClick={handleHangClick}>
+      </a>
+      <a href="#" className="hang active">
         Hang
-      </button>
-    </div>
+      </a>
+    </>
   );
 }
